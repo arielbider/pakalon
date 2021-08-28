@@ -22,19 +22,19 @@
         <legend>פרטי החייל</legend>
         <div class="item">
           <label for="first_name"> שם פרטי<span>*</span></label>
-          <input id="first_name" type="text" name="first_name" />
+          <input id="first_name" type="text" name="first_name" required/>
         </div>
         <div class="item">
           <label for="last_name"> שם משפחה<span>*</span></label>
-          <input id="last_name" type="text" name="last_name" />
+          <input id="last_name" type="text" name="last_name" required/>
         </div>
         <div class="item">
           <label for="personal_id">מספר אישי<span>*</span></label>
-          <input id="personal_id" type="number" name="personal_id" />
+          <input id="personal_id" type="number" name="personal_id" required/>
         </div>
         <div class="item">
           <label for="rank">דרגה<span>*</span></label>
-          <input id="rank" type="text" name="fee" list="ranks" />
+          <input id="rank" type="text" name="fee" list="ranks" required/>
           <datalist id="ranks">
             <option value="טוראי">
             <option value="רב טוראי">
@@ -44,22 +44,22 @@
           </datalist>
           <div class="item">
             <label for="workyear">שנת עבודה<span>*</span></label>
-            <input id="workyear" type="number" name="workyear" />
+            <input id="workyear" type="number" name="workyear" required/>
           </div>
         </div>
         <div class="item">
           <label for="miluim_start">תאריך תחילת השמ"פ" <span>*</span></label>
-          <input id="miluim_start" type="date" name="miluim_start" />
+          <input id="miluim_start" type="date" name="miluim_start" required/>
           <i class="fas fa-calendar-alt"></i>
         </div>
         <div class="item">
           <label for="miluim_end">תאריך סיום השמ"פ" <span>*</span></label>
-          <input id="miluim_end" type="date" name="miluim_end" />
+          <input id="miluim_end" type="date" name="miluim_end" required/>
           <i class="fas fa-calendar-alt"></i>
         </div>
         <div class="item">
           <label for="date_of_sign">תאריך החתמה <span>*</span></label>
-          <input id="date_of_sign" type="date" name="date_of_sign" />
+          <input id="date_of_sign" type="date" name="date_of_sign" required/>
           <i class="fas fa-calendar-alt"></i>
         </div>
 
@@ -122,8 +122,9 @@
           </div>
         </div>
       </fieldset>
-	  <div class="btn-block">
-        <a class="submit" href='tofes/index.php?personal_id=8750545&rank=סמל&first_name=אריאל&last_name=בידר&workyear=2021&miluim_start=2021-08-29&miluim_end=2021-08-31&reasons=["משך%20השירות","התראה"]&date_of_sign=2021-08-28'>צור טופס</a>
+      <div class="btn-block">
+        <!-- <a id="submit" class="submit" href='tofes/index.html?personal_id=8750545&rank=סמל&first_name=אריאל&last_name=בידר&workyear=2021&miluim_start=2021-08-29&miluim_end=2021-08-31&reasons=["משך%20השירות","התראה"]&date_of_sign=2021-08-28'>צור טופס</a> -->
+        <a id="submit" class="submit">צור טופס</a>
       </div>
     </form>
   </div>

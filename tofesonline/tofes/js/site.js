@@ -38,18 +38,18 @@ window.addEventListener('load', (event) => {
 	if (params["miluim_start"]) {
 		let date = params["miluim_start"];
 		date = date.split("-");
-		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(3) > tbody > tr > td:nth-child(3)").innerHTML = date[0];
+		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(3) > tbody > tr > td:nth-child(1)").innerHTML = date[0];
 		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(3) > tbody > tr > td:nth-child(2)").innerHTML = date[1];
-		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(3) > tbody > tr > td:nth-child(1)").innerHTML = date[2];
+		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(3) > tbody > tr > td:nth-child(3)").innerHTML = date[2];
 	}
 
 	// Enter miluim end date to its place
 	if (params["miluim_end"]) {
 		let date = params["miluim_end"];
 		date = date.split("-");
-		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(5) > tbody > tr > td:nth-child(3)").innerHTML = date[0];
+		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(5) > tbody > tr > td:nth-child(1)").innerHTML = date[0];
 		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(5) > tbody > tr > td:nth-child(2)").innerHTML = date[1];
-		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(5) > tbody > tr > td:nth-child(1)").innerHTML = date[2];
+		document.querySelector("body > div > div.tofes > div.vitur-dates > table:nth-child(5) > tbody > tr > td:nth-child(3)").innerHTML = date[2];
 	}
 
 	// Enter date of sign to its place
@@ -109,7 +109,7 @@ function pasteSignature() {
 			let curr_harig = document.querySelector("body > div.container > div.tofes > div.hrigot-table > table > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > b").innerHTML;
 			console.log(curr_harig);
 			console.log(reasons.includes(curr_harig));
-			if (reasons.includes(curr_harig)) {
+			if (reasons.includes(curr_harig.replaceAll('"',''))) {
 				harig_signature = document.querySelector("body > div.container > div.tofes > div.hrigot-table > table > tbody > tr:nth-child(" + i + ") > td:nth-child(3)");
 				harig_signature.innerHTML = '<img src="' + signature + '" style="width: 100%;">';
 			}
