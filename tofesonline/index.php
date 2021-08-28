@@ -122,8 +122,8 @@
           </div>
         </div>
       </fieldset>
-      <div class="btn-block">
-        <a class="submit" href='tofes/index.php?personal_id=8750545&rank=סמל&first_name=אריאל&last_name=בידר&workyear=2021&miluim_start=2021-08-29&miluim_end=2021-08-31&reasons=["משך%20השירות","%20התראה"]&date_of_sign=2021-08-28'>צור טופס</a>
+	  <div class="btn-block">
+        <a class="submit" href='tofes/index.html?personal_id=8750545&rank=סמל&first_name=אריאל&last_name=בידר&workyear=2021&miluim_start=2021-08-29&miluim_end=2021-08-31&reasons=["משך%20השירות","התראה"]&date_of_sign=2021-08-28'>צור טופס</a>
       </div>
     </form>
   </div>
