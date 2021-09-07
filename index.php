@@ -12,9 +12,66 @@
 
 <body>
 
+  <!-- Name Modal -->
+  <div id="nameModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" id="name-modal-close">&times;</span>
+        <h2>הכניסו את שמכם</h2>
+      </div>
+      <div class="modal-body">
+        <p contenteditable="true" class="enter-name-textbox" id="name-input"></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" id="settings-modal-close">&times;</span>
+        <h2>הגדרות</h2>
+      </div>
+      <div class="modal-body">
+        <div id="roomConnection">
+          <h3>התחבר לחדר</h3>
+          <div class="classIdDiv">
+            <input type="text" maxlength="1" class="classId">
+            <input type="text" maxlength="1" class="classId">
+            <input type="text" maxlength="1" class="classId">
+            <input type="text" maxlength="1" class="classId">
+            <input type="text" maxlength="1" class="classId">
+            <input type="text" maxlength="1" class="classId">
+            <input type="text" maxlength="1" class="classId">
+          </div>
+        </div>
+        <div id="roomCreation">
+          <h3>צור חדר</h3>
+          <button id="createButton">צור חדר</button>
+          <p id="createdId"></p>
+          <table class="points-view" id="points-view">
+            <tr>
+              <td>שם</td>
+              <td>נקודות לשיפור</td>
+              <td>נקודות לשימור</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <div class="logos">
-    <img src="img/bhd1.png" class="bhd1">
-    <img src="img/erez.png" class="erez">
+    <img src="img/gear-icon.gif" id="gear">
+    <img src="img/bhd1.png" id="bhd1">
+    <img src="img/erez.png" id="erez">
   </div>
 
   <div class="titles">
@@ -229,9 +286,32 @@
     </table>
   </div>
 
+  <div class="how-to-use">
+    <div id="how-to-use-expend">
+      <h3>כיצד משתמשים</h3>
+      <img src="img/expend-question-mark.png" id="how-to-use-question-mark">
+    </div>
+    <p id="explanation">לחצו על ריבוע בפק"לון, והוא יסומן בצבע אדום כנקודה לשיפור. אם תלחצו שוב, הוא יסומן בצבע ירוק כנקודה לשימור. לחיצה נוספת תמחק את הצבע, ותוריד אותו מרשימת הנקודות שלכם.<br>
+    כדי ליצור חדר, לחצו על כפתור ההגדרות מצד ימין למעלה, ולחצו על צור חדר. על המסך, יופיע לכם הקוד אותו אחרים צריכים להכניס במסך זה תחת "התחבר לחדר", ולכם כמנהלים, תופיע טבלה עם כלל המשתתפים והנקודות שהם דקרו.<br>
+    כאשר אתם מתחברים לחדר, ומספר החדר תקין, יהיה כתוב להם מתחת למספר החדר, "מחובר לחדר" ומספרו.<br>
+    שימוש נעים!</p>
+  </div>
+
   <div class="credit">
     <p>© כל הזכויות שמורות לאריאל בידר, בוגר ארז 73</p>
     <p>"וואלה עידן הבאת פה רעיון"</p>
+    <p>צרו קשר:</p>
+    <div>
+      <a href="https://github.com/arielbider/pakalon">
+        <img src="img/github.png">
+      </a>
+      <a href="https://www.facebook.com/arik.bider/">
+        <img src="img/facebook.png">
+      </a>
+      <a href="https://www.linkedin.com/in/ariel-bider-7aba86147/">
+        <img src="img/linkedin.png">
+      </a>
+    </div>
   </div>
 </body>
 
